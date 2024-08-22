@@ -1,0 +1,4 @@
+<div class="body">
+    <h2>Payment Method</h2>
+    <app-drop-down *ngFor="let dropDownItem of dropDownItems" [dropDownItem]="dropDownItem" (click)="toggleDropDown(this.dropDownItem.id)" [id]="id" (currentId)="onStateChange($event)"></app-drop-down>
+</div>

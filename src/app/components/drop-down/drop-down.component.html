@@ -1,0 +1,5 @@
+<div (click)="dropDownCheck()" [ngClass]="this.flag ? 'drop-down-open' : 'drop-down'">
+    <i class="{{dropDownItem.class}}"></i><h3>{{ dropDownItem.text }}</h3><i [ngClass]="this.flag ? 'bi bi-caret-up-fill' : 'bi bi-caret-down-fill'"></i><br>
+    
+</div>
+<h4 *ngIf="this.flag">{{dropDownItem.content}}</h4>
